@@ -7,22 +7,15 @@
     <link href="./style.css" rel="stylesheet">
     <title>Lazy WhatsApp</title>
 </head>
+<script src="./script.js"></script>
 <body>
     <h1><u >Lazy WhatsApp</u></h1>
     <h4>Send WhatsApp message without saving number</h3>
     <div style="padding-top: 15vh !important">
         <input type="tel" name="CountyCode" value="+91" maxlength="3" id="countryCode">
-        <input type="tel" name="contact" maxlength="10" id="contact">
+        <input type="tel" name="contact" maxlength="15" id="contact">
         <input type="button" id="button" value="Send" onclick="redirectTo()">
         <p>Enter reciever's whatsapp number</p>
     </div>
-    <script>
-        function redirectTo() {
-            let contact = document.getElementById('contact');
-            let countryCode = document.getElementById('countryCode');
-            location.replace('https://wa.me/'+countryCode.value+contact.value);
-            // console.log('https://wa.me/'+countryCode.value+contact.value);
-        }
-    </script>
 </body>
 </html>
